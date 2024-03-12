@@ -1,0 +1,10 @@
+{% extends 'restoran/base.html' %}
+
+{% block body %}
+
+
+<h1>{{ user.username }}</h1>
+<img height ="300px" widht="500px" src="{{ user.profile.image.url }}">
+
+
+{% endblock %}
