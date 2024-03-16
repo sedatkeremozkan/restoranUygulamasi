@@ -13,7 +13,9 @@
             <h1>{{object.item_name }}</h1>
             <h2>{{object.item_description}}</h2>
             <h3>{{object.item_price}}₺</h3>
+            {% if user.is_authenticated %}
             <a class= 'btn-danger' href="{% url 'restoran:delete_item' item.id %}">Sil</a>
+            {% endif %}
         </div>    
     </div>   
 

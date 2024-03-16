@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect
 from django.http import HttpResponse
-from .models import Item
+from .models import Item, Comment
 from django.template import loader
 from .forms import ItemForm, CommentForm
 from django.views.generic.list import ListView 
